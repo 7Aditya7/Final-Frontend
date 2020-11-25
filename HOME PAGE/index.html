@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+
+    <!--AJAX AND JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    
+   
+</head>
+
+<body>
+    <!--Navbar-->
+    <header id="navbar-section" class="navbar-section">
+        <nav class="navbar scroll navbar-expand-lg">
+
+            <a class="navbar-brand" href="#">
+            	<img src="./assets/logo-company.jpg" height="60px" width="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse text-light justify-content-start row" id="navbarSupportedContent">
+
+                <div class="col-12" id="topBar">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="https://www.google.com/maps/preview" target="_blank"><span><i
+                                        class="fas fa-map-marker-alt mr-2"></i></span>Kathmandu,
+                                Nepal</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="https://mail.google.com/" target="_blank"><span><i
+                                        class="fas fa-envelope mr-2 "></i></span>101infotech@gmail.com</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="tel:+977 9862259743"><span><i
+                                        class="fas fa-phone-volume mr-2"></i></span>+977 9862259743</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <ul class="navbar-nav">
+                        <form action="#/" class="form form-1">
+                            <input class="form-control input-1" type="search" placeholder="Search..">
+                            <span><i class="fa fa-search"></i></span>
+                        </form>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link hover" href="#"><span class="span mr-2"><i
+                                        class="fas fa-home"></i></span>Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link hover" href="#"><span class="span mr-2"><i
+                                        class="fas fa-chalkboard-teacher"></i></span>Teacher</a>
+                        </li>
+                        <li class="nav-item dropdown hover mr-3">
+                            <a class="nav-link pb-0" href="#/">
+                                <span><i class="fas fa-user-check"></i></span>
+                                Tutor Login
+                            </a>
+                        </li>
+                        <li class="nav-item  mr-3">
+                            <a class="nav-link hover" href="#"><span class="span mr-2"><i
+                                        class="fas fa-scroll"></i></span>About Us</a>
+                        </li>
+                        <li class="nav-item ml-auto mr-0 form-2 d-none d-lg-block" id="searchNavItem">
+                            <!-- <form> -->
+                            <input class="searchBar" placeholder='Search...' type="search" id="searchBarId">
+                            <span id="searchSpan"><i class="fa fa-search" id="search-icon"></i> </span>
+                            <!-- </form> -->
+                        </li>
+                        <li class="nav-item dropdown hover mr-n5">
+                            <a class="nav-link pb-0" href="#/">
+                                <span><i class="fas fa-user-check"></i></span>
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <!--END OF NAVBAR-->
+
+    <!-- START OF CAROUSEL-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel" data-keyboard="true">
+
+        <!--Indicators !-->
+
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow !-->
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/reviewPic-1.jpeg" alt="Los Angeles" class="w-100">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 background py-3">
+                                <h2>Every student is a genius.</h2>
+                                <h2>Give them a perfect tutor</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/reviewPic-2.jpeg" alt="Chicago" class="img-fluid w-100">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 background py-3">
+                                <h2>donot compromise in getting</h2>
+                                <h2>tutor of your type</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./assets/reviewPic-3.jpeg" alt="Chicago" class="w-100">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-6 background py-3">
+                                <h2>Believe you can</h2>
+                                <h2>and you're halfway there</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls !-->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- END OF CAROUSEL -->
+
+
+
+    <!-- START OF FORM -->
+    <section class="teacherFindingForm" id="teacherFindingForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 text-center descriptionAboutWebsite d-none d-lg-block">
+                    <div class="description">
+                        <h3>Find The Right Tutor For You</h3>
+                        <p class="mt-4">With My Tutor, we provide you the best tutor according to your schedules.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 form p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#000b76" fill-opacity="0.8"
+                            d="M0,128L24,133.3C48,139,96,149,144,165.3C192,181,240,203,288,229.3C336,256,384,288,432,304C480,320,528,320,576,266.7C624,213,672,107,720,96C768,85,816,171,864,170.7C912,171,960,85,1008,96C1056,107,1104,213,1152,224C1200,235,1248,149,1296,128C1344,107,1392,149,1416,170.7L1440,192L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+                        </path>
+                    </svg>
+                    <h3 class="text-center">Get Started</h3>
+                    <form action="#" class="mt-3 p-3 m-2">
+                        <div class="form-row">
+                            <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fas fa-chalkboard-teacher"></i></span>
+                                    <select name="learningMethod" class="form-control" id="learningMethod" required>
+                                        <option value="" selected disabled hidden>Choose your method</option>
+                                        <option value="online">Online</option>
+                                        <option value="inPerson">In-Person</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+                                    <select name="location" class="form-control" id="location" required>
+                                        <option value="" selected disabled hidden>Choose your location</option>
+                                        <option value="Kathmandu">Kathmandu</option>
+                                        <option value="Chitwan">Chitwan</option>
+                                        <option value="Pokhara">Pokhara</option>
+                                        <option value="Jhapa">Jhapa</option>
+                                        <option value="Biratnagar">Biratnagar</option>
+                                        <option value="Kailali">Kailali</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fas fa-book"></i></span>
+                                    <select name="subjects" class="form-control" id="subjects" required>
+                                        <option value="" selected disabled hidden>Choose your subjects</option>
+                                        <option value="Account">Account</option>
+                                        <option value="Computer Science">Computer Science</option>
+                                        <option value="Compulsory Mathematics">Compulsory Mathematics</option>
+                                        <option value="EPH">EPH</option>
+                                        <option value="English">English</option>
+                                        <option value="Nepali">Nepali</option>
+                                        <option value="Optional Mathematics">Optional Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Social Studies">Social Studies</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fas fa-graduation-cap"></i></span>
+                                    <select name="education" class="form-control" id="education" required>
+                                        <option value="" selected disabled hidden>Choose your grade</option>
+                                        <option value="Nursery">Nursery</option>
+                                        <option value="L.K.G">L.K.G</option>
+                                        <option value="U.K.G">U.K.G</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="+2">+2</option>
+                                        <option value="Bachelors">Bachelors</option>
+                                        <option value="Masters">Masters</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-lg search-btn mt-2">
+                                Search<span class="ml-2"><i class="fas fa-search"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FORM  -->
+
+    <!-- We Provide Section -->
+
+    <section class="weProvideSection">
+        <div class="container p-5">
+            <h3 class="text-center font-weight-bold">WE PROVIDE</h3>
+            <div class="row mt-5">
+                <div class="col-md col-sm-12 text-center provide mr-sm-5 mb-sm-3 mb-3 mb-md-0 p-4 pt-5 service-1">
+                    <span><i class="fas fa-house-user fa-3x"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Home Tutoring</h3>
+                </div>
+                <div class="col-md col-sm-12 text-center provide mr-sm-5 mb-sm-3 mb-3 mb-md-0 p-4 pt-5 service-2">
+                    <span><i class="fas fa-laptop-code fa-3x"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Online Tutoring</h3>
+                </div>
+                <div class="col-md col-sm-12 text-center provide mb-sm-3 mb-3 mb-md-0 p-4 pt-5 service-3">
+                    <span><i class="fas fa-school fa-3x"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Schools, University & Institute Teachers</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End Of We Provide Section -->
+
+    <!-- START OF HOW IT WORKS-->
+
+    <section class="howItWorks">
+        <div class="container">
+            <div class="h2 text-center font-weight-bold">HOW IT WORKS</div>
+            <div class="p-5 row">
+                <div class="col-md-3 col-lg col-sm-5 text-center">
+                    <span><i class="working fas fa-user-plus fa-3x icon"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Create Account</h3>
+                </div>
+                <i class="fas fa-arrow-right fa-first fa-3x  mt-4 icon"></i>
+                <div class="col-md-3 col-lg col-sm-5 text-center">
+                    <span><i class="working fas fa-search fa-3x icon"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Search Tutor</h3>
+                </div>
+                <i class="fas fa-arrow-right fa-second  fa-3x mt-4 icon"></i>
+                <div class="col-md-3 col-lg col-sm-11 text-center">
+                    <span><i class="working fas fa-chalkboard-teacher fa-3x icon"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Request Tutor</h3>
+                </div>
+                <i class="fas fa-arrow-right fa-third fa-3x mt-4 icon"></i>
+                <div class="col-lg col-md-5 col-sm-5 text-center">
+                    <span><i class="working fas fa-credit-card fa-3x icon"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Payment</h3>
+                </div>
+                <i class="fas fa-arrow-right fa-fourth fa-3x mt-4 icon"></i>
+                <div class="col-lg col-md-4 col-sm-5 text-center">
+                    <span><i class="working fas fa-user-graduate fa-3x icon"></i></span>
+                    <h3 class="mt-4 font-weight-bold">Enroll</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START OF WHY MY TUTOR -->
+
+    <section class="whyMyTutor">
+        <div class="container">
+            <h3 class="font-weight-bold text-center">WHY MY TUTOR</h3>
+            <ul class="nav nav-pills mt-5 justify-content-center">
+                <li class="nav-item mr-3">
+                    <a class="nav-link font-weight-bold active" data-toggle="pill" href="#student"><i
+                            class="fas fa-user-graduate pr-2"></i>Student</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link font-weight-bold" data-toggle="pill" href="#tutor"><i
+                            class="fas fa-chalkboard-teacher pr-2"></i>Tutor</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="student">
+                    <div class="row mt-5">
+                        <div class="col-xl-3 col-md-4">
+                            <div class=" card h-100 p-0">
+                                <div class="card-body text-center">
+                                    <span><i class="fab fa-cc-visa fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Easy Payment</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-sm-4 mt-md-0 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-user-graduate fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Find Tutor With Ease</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-4 mt-sm-4 mt-md-0">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-money-bill-wave fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Cheap Fees</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-md-4 mt-xl-0 mt-sm-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-star-half-alt fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Rated Tutor By Students Themselves</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-xl-4 mt-md-4 mt-sm-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-laptop-house fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Online Tutoring</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-xl-4 mt-md-4 mt-sm-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-map-marked-alt fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Location Of Your Device</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-xl-4 mt-md-4 mt-sm-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="far fa-clock fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Learn Anytime</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-4 mt-xl-4 mt-md-4 mt-sm-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-sync fa-2x"></i></span>
+                                    <p class="card-head font-weight-bold mt-2">Refundable</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel fugit sint
+                                        expedita in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="tutor">
+                    <div class="row mt-5">
+                        <div class=" col-md-6 col-lg-4 ">
+                            <div class="card h-100">
+                                <div class="card-body text-center ">
+                                    <span><i class="fas fa-money-bill-wave fa-2x"></i></span>
+                                    <p class="mt-2 font-weight-bold card-head">Least Commision</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 mt-md-0 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="far fa-clock fa-2x"></i></span>
+                                    <p class="mt-2 font-weight-bold card-head">Payment in Time</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 mt-lg-0 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fas fa-user-graduate fa-2x"></i></span>
+                                    <p class="mt-2 font-weight-bold card-head">Get student easily</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <p class="mt-2 font-weight-bold card-head">Get student of your desire</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <span><i class="fab fa-cc-visa fa-2x"></i></span>
+                                    <p class="mt-2 font-weight-bold card-head">Get payment of your desire</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-md-6 col-lg-4 mt-4">
+                            <div class="card h-100">
+                                <div class="card-body text-center">
+                                    <p class="mt-2 font-weight-bold card-head">Least Commision</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam vel qui
+                                        facere facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF WHY MY TUTOR -->
+
+    <!-- START OF THE REVIEW SECTION -->
+
+
+    <section class="reviewSection ml-sm-4 ml-3">
+       
+            <h2 class="text-center font-weight-bold">TESTIMONIALS OF MEMBERS</h2>
+            <div class="container">
+                <div class="owl-navigation mt-n3">
+                    <span class="owl-nav-prev mr-3"><i class="fas fa-long-arrow-alt-left fa-2x"></i></span>
+                    <span class="owl-nav-next ml-3"><i class="fas fa-long-arrow-alt-right fa-2x"></i></span>
+                </div>
+            <div class="hello owl-carousel row">
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-5.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">Jessica Alba</h4>
+                            <span class="badge badge-pill badge-primary">Student</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-primary"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-4.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">John Doe</h4>
+                            <span class="badge badge-pill badge-danger">Tutor</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-danger"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-6.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">Hannah Sulak</h4>
+                            <span class="badge badge-pill badge-primary">Student</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-primary"></i>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-7.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">Jonasy Kannwald</h4>
+                            <span class="badge badge-pill badge-danger">Tutor</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-danger"></i>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-8.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">Sushma Pradhan</h4>
+                            <span class="badge badge-pill badge-primary">Student</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-primary"></i>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <img src="./assets/reviewPic-9.jpeg" alt="John Doe" class="mr-2 mt-2 rounded-circle" style="width:90px;">
+                        <div class="media-body mt-3">
+                            <h4 class="font-weight-bold">Gautam Adhikary</h4>
+                            <span class="badge badge-pill badge-danger">Tutor</span>
+                            <span class="d-block rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i><i class="far fa-star"></i></span>
+                            <p class="mt-2 lead pr-2"><i class="fas fa-quote-left fa-2x ml-n5 mr-3 text-danger"></i>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Doloribus sunt ad dolore explicabo dolorum voluptas?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- END OF THE REVIEW SECTION -->
+
+
+
+    <!-- START OF FAQ SECTION -->
+    <section class="faqSection">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">FAQ</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header p-2" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-decoration-none text-light stretched-link"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                <span class="mr-2"><i class="fas fa-question-circle"></i></span>Why My Tutor?
+                            </button>
+    
+                        </h5>
+                    </div>
+    
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body text-light">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur omnis esse nam voluptates eius
+                            suscipit, praesentium facere quod maxime temporibus, accusantium ipsum? Doloribus excepturi
+                            ducimus libero sit eveniet autem ullam assumenda quo quos omnis molestias reprehenderit,
+                            possimus maxime aperiam tempore esse corporis officia vitae facilis voluptatum nesciunt
+                            distinctio earum qui? Corrupti molestias ea fugiat minima blanditiis dignissimos omnis
+                            consequatur quos.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-decoration-none text-light stretched-link"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <span class="mr-2"><i class="fas fa-question-circle"></i></span>How do i login?
+                            </button>
+    
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in deserunt saepe eaque maiores
+                            voluptate, accusamus reprehenderit at recusandae laborum numquam, incidunt labore officia,
+                            libero ab. Molestias corrupti fuga inventore ab minima sunt labore nam distinctio? Veritatis
+                            quod ea hic maiores vitae voluptate. Odio eligendi hic, porro id nobis perspiciatis error
+                            expedita, in voluptate minus necessitatibus atque numquam tempora animi.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header p-2" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-decoration-none text-light stretched-link"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <span class="mr-2"><i class="fas fa-question-circle"></i></span>How can i pay the fees to
+                                the tutor?
+                            </button>
+    
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam corporis a rerum. Fugit quos
+                            iure nihil nulla accusantium provident odit earum laborum quidem nostrum dolorem, ducimus quo
+                            perspiciatis suscipit tenetur ipsam sapiente? Quo, dignissimos. Sapiente alias voluptatum
+                            temporibus ex necessitatibus molestiae nihil consectetur saepe recusandae enim repellat iste
+                            voluptate veniam quidem accusamus a dolorem molestias dicta illum, amet distinctio aut.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FAQ SECTION -->
+
+
+    <!--Footer-->
+    <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#18363a" fill-opacity="1"
+            d="M0,96L48,90.7C96,85,192,75,288,96C384,117,480,171,576,165.3C672,160,768,96,864,101.3C960,107,1056,181,1152,186.7C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+    <footer class="footer mt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-md-6">
+                    <ul>
+                        <p>Navigation</p>
+                        <a href="#/">
+                            <li class="list-item list-unstyled mt-4">Home</li>
+                        </a>
+                        <a href="#/">
+                            <li class="list-item list-unstyled">Teachers</li>
+                        </a>
+                        <a href="#/">
+                            <li class="list-item list-unstyled">Students</li>
+                        </a>
+                        <a href="#/">
+                            <li class="list-item list-unstyled">Login</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <ul>
+                        <p>Contact Us</p>
+                        <a href="https://www.google.com/maps/preview" target="_blank">
+                            <li class="list-item list-unstyled mt-4">
+                            	<span><i class="fas fa-map-marker-alt mr-2"></i></span>Kathmandu, Nepal
+                            </li>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <li class="list-item list-unstyled">
+                            	<span><i class="fas fa-envelope mr-2 "></i></span>101infotech@gmail.com
+                            </li>
+                        </a>
+                        <a href="tel:+977 9862259743">
+                            <li class="list-item list-unstyled">
+                            	<span><i class="fas fa-phone-volume mr-2"></i></span>+977 9862259743
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <ul>
+                    <p>About Tutor Finder</p>
+                    <div class="about-detail mt-4">
+                        <a href="https://mail.google.com/" target="_blank">
+                            <li class="list-item list-unstyled">
+                                Give Us Feedback
+                            </li>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <li class="list-item list-unstyled">
+                                Privacy Policy
+                            </li>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <li class="list-item list-unstyled">
+                                Terms
+                            </li>
+                        </a>
+                        <a href="https://mail.google.com/" target="_blank">
+                            <li class="list-item list-unstyled">
+                                Jobs
+                            </li>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/" target="_blank"><span class="d-inline-block">
+                        	<i class="fab fa-facebook fa-2x mr-2"></i></span>
+                        </a>
+                    	
+                    	<a href="https://www.instagram.com/" target="_blank"><span class="d-inline-block">
+                    		<i class="fab fa-instagram fa-2x mr-2"></i></span>
+                    	</a>
+
+                    	<a href="https://twitter.com/home?lang=en" target="_blank"><span class="d-inline-block">
+                    		<i class="fab fa-twitter fa-2x"></i></span>
+                    	</a>
+                    </div>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <ul>
+                    <p>Newsletter</p>
+                    <p class="font-weight-light pt-2"> A rover wearing a fuzzy suit doesn’t alarm the real penguins </p>
+                    <p>
+                        <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <div class="input-group-append">
+                            <button class="btn btn-default bg-white border" type="button">
+                                <span> <i class="fas fa-envelope "></i></span>
+                            </button>
+                        </div>
+                        </div>
+                    </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="sponsors">
+                <p class="text-center font-weight-bold">Our Sponsors</p>
+                <div class="row text-center mt-4">
+                    <div class="col-12 col-sm-4">
+                        <div class="logo-sponsor logo-1">
+                            <a href="#/"> <img src="./assets/logo1.jpg" class="image"> </a>
+                        </div>
+                    </div>
+                
+                    <div class="col-12 col-sm-4">
+                
+                        <div class="logo-sponsor logo-2">
+                            <a href="#/"><img src="./assets/logo2.png" class="image"></a>
+                        </div>
+                
+                    </div>
+                
+                    <div class="col-12 col-sm-4">
+                        <div class="logo-sponsor logo-3">
+                            <a href="#/"><img src="./assets/logo3.jpg" class="image"> </a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+                
+
+            <div class="col-12 social-icons-footer text-center pb-5 mt-2">
+                <span>Copyright &copy; 2020 101 Info Tech Pvt. Ltd. All
+                Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--End Footer-->
+
+
+
+
+    <!--Javascipt-->
+
+    <script>
+        var search = document.getElementById("search-icon");
+        var inputField = document.getElementById('searchBarId');
+        search.addEventListener("mouseover", mouseOver);
+        inputField.addEventListener("mouseover", mouseOver);
+        inputField.addEventListener("focusin", mouseOver);
+        inputField.addEventListener("focusout", mouseOut);
+        function mouseOver() {
+
+            searchBarId.style.width = "190px";
+        }
+        function mouseOut() {
+            searchBarId.style.width = "0px";
+        }
+    </script>
+    <script src="./js/script.js"></script>
+    <!--JAVSCRIPT CDN OF BOOTSTRAP-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
