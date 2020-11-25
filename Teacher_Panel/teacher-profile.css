@@ -1,0 +1,125 @@
+.teacher-panel {
+  margin-top: 8rem;
+}
+.teacher-panel .user-profile .profileBox {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  color: #000000;
+}
+.teacher-panel .user-profile .profileBox img {
+  border-radius: 50%;
+  width: 200px;
+  height: 185px;
+  border: 8px solid #ffffff;
+}
+.teacher-panel .profilePicture {
+  position: relative;
+}
+.teacher-panel .profilePicture a {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  opacity: 0.6;
+  color: #000000;
+  font-size: 1.6rem;
+}
+.teacher-panel .profilePicture a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.teacher-panel .user-profile .profileBox .verified {
+  color: #070052;
+  font-size: 1.6rem;
+}
+.teacher-panel .user-profile tr:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+.rating {
+  color: #ffbf00;
+}
+#divider {
+  background-color: #000000;
+  width: 5px;
+}
+.teacher-panel .user-profile .editBox {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+.teacher-panel .user-profile .editBox .nav-link {
+  position: relative;
+  background: #3c8af0;
+  border-radius: 50%;
+  padding: 0.8rem 1.15rem;
+  color: #ffffff;
+}
+.teacher-panel .user-profile .editBox .nav-link:focus,
+.teacher-panel .user-profile .editBox .nav-link:active,
+.teacher-panel .user-profile .editBox .nav-link.active {
+  background-color: #070052;
+  border-color: #000000;
+  color: white;
+}
+.teacher-panel .user-profile .editBox .modal-body,
+.teacher-panel .user-profile .editBox .card {
+  cursor: pointer;
+}
+.teacher-panel .user-profile .editBox .nav-link span {
+  position: absolute;
+  border-radius: 50%;
+  top: 70%;
+}
+.teacher-panel .user-profile .editBox .modal {
+  margin-top: 17vh;
+}
+.teacher-panel .user-profile .btn {
+  background-color: #4b0082;
+  color: white;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.teacher-panel .user-profile .btn:hover {
+  color: white;
+}
+.teacher-panel .user-profile .progress-bar {
+  background-color: #070052;
+}
+
+/* REPOSNSIVNESS OF THE IMAGE */
+/* MEDIA QUERIES */
+@media all and (max-width: 1200px) and (min-width: 992px) {
+  .teacher-panel .user-profile .profileBox img {
+    border-radius: 50%;
+    width: 193px;
+    height: 180px;
+    border: 8px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .teacher-panel .user-profile .profileBox img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 767px) and (min-width: 576px) {
+  .teacher-panel .user-profile .profileBox img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+@media screen and (max-width: 575px) {
+  .teacher-panel .user-profile .profileBox img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+/* END OF MEDIA QUERIES */

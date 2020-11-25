@@ -1,0 +1,23 @@
+.subjects {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.subjects .card {
+  color: #000000;
+  background: #faf9f9;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+}
+.subjects .card:hover {
+  box-shadow: 0px 0px 9px 0px rgba(47, 50, 50, 0.75);
+  z-index: 1.1;
+}
+.subjects a,
+.subjects .updateButton {
+  background: indigo;
+  color: #ffffff;
+}
+.subjects a:hover,
+.subjects .updateButton:hover {
+  color: #ffffff;
+}

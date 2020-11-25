@@ -1,0 +1,15 @@
+.teacher-panel {
+  margin: 8rem 0rem;
+}
+.teacher-panel .asssignmentSubmissions .btn {
+  background-color: indigo;
+}
+.teacher-panel .asssignmentSubmissions .modal-content {
+  border-radius: 10px;
+  height: max-content;
+  padding: 1rem;
+}
+.teacher-panel .asssignmentSubmissions textarea {
+  max-height: 8rem;
+  min-height: 5rem;
+}

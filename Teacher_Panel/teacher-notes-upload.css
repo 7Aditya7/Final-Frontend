@@ -1,0 +1,22 @@
+.teacher-panel {
+  margin: 8rem 0rem;
+}
+.notesUpload .notes {
+  background: linear-gradient(120deg, #2669d4 0%, #52c2f7 100%);
+  border-radius: 2px;
+  padding: 0.9rem 2rem 0.5rem;
+  width: 80%;
+}
+.notesUpload .btn {
+  background-color: indigo;
+}
+.notesUpload textarea {
+  min-height: 5rem;
+  max-height: 8rem;
+}
+.notesUpload .modal-content {
+  background-color: white;
+  border-radius: 10px;
+  height: max-content;
+  padding: 1rem;
+}

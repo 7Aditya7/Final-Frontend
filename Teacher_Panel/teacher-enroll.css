@@ -1,0 +1,23 @@
+.teacher-panel {
+  margin: 8rem 0rem;
+}
+.teacher-panel .enrollRequests {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.teacher-panel .enrollRequests a {
+  color: #000000;
+}
+.teacher-panel .enrollRequests .btns {
+  background: #1f9aa3;
+  color: #ffffff;
+}
+.teacher-panel .enrollRequests .icons {
+  color: rgb(241, 7, 7);
+}
+.teacher-panel .enrollRequests .timing {
+  background: rgb(255, 174, 0);
+}
+.teacher-panel .enrollRequests .card {
+  background-color: #f4f4f4;
+}

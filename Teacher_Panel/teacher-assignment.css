@@ -1,0 +1,16 @@
+.teacher-panel {
+  margin: 8rem 0rem;
+}
+.assignmentUpload .notes {
+  border-radius: 2px;
+  padding: 0.9rem 2rem 0.5rem;
+  width: 80%;
+}
+.assignmentUpload .btn {
+  background-color: indigo;
+}
+.assignmentUpload .modal-content {
+  border-radius: 10px;
+  height: max-content;
+  padding: 2rem;
+}

@@ -1,0 +1,23 @@
+.hirePanel {
+  margin: 8rem 0rem;
+}
+.hireRequests .card {
+  background-color: #f4f4f4;
+}
+.hireRequests a {
+  color: #000000;
+}
+.hireRequests .btns {
+  background: #1f9aa3;
+  color: #ffffff;
+}
+.hireRequests .icons {
+  color: rgb(241, 7, 7);
+}
+.hireRequests .timing {
+  background: rgb(255, 174, 0);
+}
+.hirePanel .hireRequests textarea {
+  min-height: 5rem;
+  max-height: 8rem;
+}
