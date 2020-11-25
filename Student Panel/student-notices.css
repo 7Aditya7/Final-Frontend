@@ -1,0 +1,52 @@
+.student-panel-notices {
+  margin: 8rem 1rem;
+  margin-bottom: 3rem;
+}
+.student-panel-notices .student-notices.card {
+  border-radius: 0.8rem;
+  background-color: #faf9f9;
+}
+.student-panel-notices .student-notices .studentNotice img {
+  width: 40px;
+  background: rgb(105, 213, 247);
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+.student-panel-notices .student-notices .studentNotice .badge {
+  background: #341fb8;
+  color: white;
+}
+.student-panel-notices .filterNotices {
+  border-radius: 0.8rem;
+  background-color: #faf9f9;
+}
+
+@media only screen and (min-width: 768px) {
+  .student-panel-notices .student-notices.card .student-notices-content {
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .student-panel-notices
+    .student-notices.card
+    .student-notices-content::-webkit-scrollbar {
+    width: 6px;
+  }
+  .student-panel-notices
+    .student-notices.card
+    .student-notices-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  .student-panel-notices
+    .student-notices.card
+    .student-notices-content::-webkit-scrollbar-thumb {
+    background: #9644d1;
+    border-radius: 10px;
+  }
+  .student-panel-notices
+    .student-notices.card
+    .student-notices-content::-webkit-scrollbar-thumb:hover {
+    background: #622191;
+  }
+}

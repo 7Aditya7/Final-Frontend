@@ -1,0 +1,24 @@
+.student-panel {
+  margin: 8rem 0rem;
+}
+.student-panel .notes {
+  background: linear-gradient(120deg, #2669d4 0%, #52c2f7 100%);
+  border-radius: 2px;
+  padding: 0.9rem 2rem 0.5rem;
+  width: 80%;
+}
+.student-panel .notes tbody tr:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+}
+.student-panel thead {
+  border: none;
+  background-color: rgba(26, 26, 26, 0.8);
+}
+.student-panel tbody {
+  background-color: transparent;
+}
+.student-panel .btn {
+  background-color: indigo;
+  /*border-radius: 7px;*/
+}

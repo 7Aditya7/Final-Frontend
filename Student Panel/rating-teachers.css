@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.review-section {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.review-section #divider {
+  background-color: #000000;
+  width: 5px;
+}
+.review-section .review-section-container .write-ratings,
+.review-section .review-section-container .profileBox {
+  border-radius: 0.7rem;
+}
+.review-section .profileBox {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  color: #000000;
+}
+.review-section .profileBox .profilePicture img {
+  border-radius: 50%;
+  width: 200px;
+  height: 185px;
+  border: 8px solid #ffffff;
+}
+.review-section .profilePicture {
+  position: relative;
+}
+.review-section .profilePicture a {
+  position: absolute;
+  left: 46.5%;
+  bottom: 3%;
+  opacity: 0.6;
+  color: #000000;
+  font-size: 1.6rem;
+}
+.review-section .profilePicture a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.review-section .profileBox .verified img {
+  width: 22px;
+}
+.review-section .profileBox .rating,
+.review-section .star-rating h4.demo {
+  color: #ffd700;
+}
+.review-section .btn {
+  background-color: indigo;
+}
+.review-section textarea {
+  max-height: 7rem;
+}
+.star-rating {
+  position: relative;
+}
+.review-section .star-rating .star-ratings-top {
+  display: inline-flex;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.star-rating .star-ratings-bottom {
+  display: inline-flex;
+  position: absolute;
+  cursor: pointer;
+  color: gold;
+  left: -0.6px;
+  top: 4.39px;
+  overflow: hidden;
+  width: 0;
+  z-index: -1;
+}
+/* REPOSNSIVNESS OF THE IMAGE */
+/* MEDIA QUERIES */
+@media all and (max-width: 1200px) and (min-width: 992px) {
+  .student-panel .user-profile .profileBox .profilePicture img {
+    border-radius: 50%;
+    width: 193px;
+    height: 180px;
+    border: 8px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .student-panel .user-profile .profileBox .profilePicture img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 767px) and (min-width: 576px) {
+  .student-panel .user-profile .profileBox .profilePicture img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+@media screen and (max-width: 575px) {
+  .teacher-panel .user-profile .profileBox .profilePicture img {
+    border-radius: 50%;
+    width: 180px;
+    height: 167px;
+    border: 8px solid #ffffff;
+  }
+}
+/* END OF MEDIA QUERIES */

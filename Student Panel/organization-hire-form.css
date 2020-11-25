@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.teacher-hire-form {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+.teacher-hire-form .heading-line {
+  width: 5px;
+  height: 40px;
+  background-color: #4b0082;
+}
+.teacher-hire-form form .form-group i {
+  color: #18363a;
+}
+.teacher-hire-form .btn {
+  background-color: indigo;
+}
+.teacher-hire-form #noOfStudents-form {
+  display: none;
+}
+.teacher-hire-form .sub .btn {
+  background-color: white;
+}
+.teacher-hire-form form .form-group .send i {
+  color: #ffffff !important;
+}
+@media only screen and (max-width: 768px) {
+  .teacher-hire-form .organization-hire-form-container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .teacher-hire-form .organization-hire-form-container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .teacher-hire-form .organization-hire-form-container {
+    width: 50%;
+  }
+}

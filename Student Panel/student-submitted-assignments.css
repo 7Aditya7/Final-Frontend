@@ -1,0 +1,19 @@
+.student-panel {
+  margin: 8rem 0rem;
+}
+.student-panel .btn {
+  background-color: indigo;
+}
+.student-panel .modal-content {
+  background-color: rgba(29, 111, 224, 1);
+  border-radius: 10px;
+  height: max-content;
+  padding: 1rem;
+  width: 70%;
+}
+.student-panel textarea {
+  max-height: 7rem;
+}
+.student-panel .upload-btn {
+  height: max-content;
+}

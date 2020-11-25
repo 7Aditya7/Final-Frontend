@@ -1,0 +1,107 @@
+.student-panel {
+  margin: 8rem 3rem;
+}
+.student-panel .searchResults .mainContent,
+.student-panel .searchResults .filters {
+  background: #faf9f9;
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+}
+.student-panel .searchResults form.searchForm {
+  position: relative;
+  width: 300px;
+  border-radius: 0.3rem;
+}
+.student-panel .searchResults form.searchForm button {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 48px;
+  width: 50px;
+  background: #18363a;
+  color: #ffffff;
+}
+.student-panel .searchResults form.searchForm input:focus {
+  outline: none;
+}
+.student-panel .searchResults form.searchForm input:focus {
+  outline: #4b0082 solid 3px;
+}
+.student-panel .searchResults .teacherLists .card {
+  border-radius: 0.6rem;
+  transition: all 0.2s ease-in-out;
+}
+.student-panel .searchResults .teacherLists .card .card-body {
+  position: relative;
+}
+.student-panel .searchResults .teacherLists .card .card-body span.subjects {
+  background-color: #18363a;
+  color: #ffffff;
+}
+.student-panel .searchResults .teacherLists .card .card-footer {
+  background-color: #ece9e9;
+}
+.student-panel .searchResults .teacherLists .card:hover {
+  z-index: 1;
+  box-shadow: 0px 0px 9px 0px rgba(47, 50, 50, 0.75);
+}
+.student-panel .searchResults .teacherLists .card .cardInfo {
+  font-weight: 600;
+}
+.student-panel .searchTeachers .teacherLists .card a img.active {
+  width: 15px;
+}
+.student-panel .searchResults .btns {
+  background: #18363a;
+  color: #ffffff;
+}
+
+/* OVERLAY */
+.student-panel .teacherLists .card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f5f1f8;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease;
+}
+.student-panel .teacherLists .card:hover .overlay {
+  height: 100%;
+}
+.student-panel .teacherLists .card .overlay .text {
+  color: #ffffff !important;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* END OF OVERLAY */
+
+/* DROPDOWN */
+
+.student-panel .searchResults .dropdown {
+  background: #faf9f9;
+  border-radius: 0.7rem;
+  padding: 0rem;
+}
+.student-panel .searchResults .dropdown-content {
+  display: none;
+}
+
+/* END */
+
+@media only screen and (max-width: 767px) {
+  .student-panel {
+    margin: 8rem 1.2rem;
+  }
+  .student-panel .searchResults .mainContent {
+    padding: 0rem;
+  }
+}
